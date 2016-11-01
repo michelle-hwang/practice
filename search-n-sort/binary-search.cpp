@@ -35,6 +35,15 @@ int binarySearchRecursive(int a[], int x, int i, int n) {
 }
 
 int main() {
+	int arr[] = {1, 2, 5, 7, 10};
+	int arr2[] = {1, 2, 7, 10};
+
+	cout << binarySearch(arr, 2); << "\n";
+	cout << binarySearchRecursive(arr2, 7, 0, sizeof(arr)) << "\n";
 }
 
 main()
+
+
+
+
