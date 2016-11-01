@@ -3,7 +3,7 @@
 // Search sorted array to find index location of a given element
 
 int binarySearch(int a[], int x) {
-	int n = sizeof(a);
+	int n = sizeof(a) / sizeof(*a);
 	int i = 0;
 
 	while(i < n) {
@@ -39,7 +39,7 @@ int main() {
 	int arr2[] = {1, 2, 7, 10};
 
 	cout << binarySearch(arr, 2); << "\n";
-	cout << binarySearchRecursive(arr2, 7, 0, sizeof(arr)) << "\n";
+	cout << binarySearchRecursive(arr2, 7, 0, sizeof(arr) / sizeof(*arr)) << "\n";
 }
 
 main()
